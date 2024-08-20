@@ -1,0 +1,120 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Base.Theme.GstCalculatorUsingKotlin" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- Primary dark color -->
+        <item name="colorPrimaryDark">@color/white</item>
+        <!-- Background color -->
+        <item name="background">@color/lightWhite</item>
+        <!-- Light status bar (for light icons) -->
+        <item name="android:windowLightStatusBar">true</item>
+        <!-- Text alignment for views -->
+        <item name="android:textAlignment">viewEnd</item>
+        <!-- Default text size -->
+        <item name="android:textSize">@dimen/font_size_28</item>
+        <!-- Default text color -->
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <!-- Application theme extending the base theme -->
+    <style name="Theme.GstCalculatorUsingKotlin" parent="Base.Theme.GstCalculatorUsingKotlin" />
+
+    <!-- Style for percentage button -->
+    <style name="percentageButton" parent="Widget.MaterialComponents.ExtendedFloatingActionButton">
+        <!-- Text alignment -->
+        <item name="android:textAlignment">center</item>
+        <!-- Text color -->
+        <item name="android:textColor">@color/white</item>
+        <!-- Text size -->
+        <item name="android:textSize">@dimen/font_size_12</item>
+        <!-- Single line text -->
+        <item name="android:singleLine">true</item>
+        <!-- Bold text style -->
+        <item name="android:textStyle">bold</item>
+        <!-- Button padding -->
+        <item name="android:paddingEnd">@dimen/dim_3</item>
+        <item name="android:paddingTop">@dimen/dim_4</item>
+        <item name="android:paddingBottom">@dimen/dim_4</item>
+        <item name="android:paddingStart">@dimen/dim_3</item>
+        <!-- Background color -->
+        <item name="backgroundTint">@color/blue</item>
+        <!-- Button dimensions -->
+        <item name="android:layout_width">@dimen/dim_55</item>
+        <item name="android:layout_height">wrap_content</item>
+        <!-- Button margins -->
+        <item name="android:layout_marginBottom">@dimen/dim_2</item>
+        <item name="android:layout_marginTop">@dimen/dim_2</item>
+        <item name="android:layout_marginRight">@dimen/dim_2</item>
+        <item name="android:layout_marginLeft">@dimen/dim_2</item>
+        <!-- Button corner radius -->
+        <item name="cornerRadius">@dimen/dim_5</item>
+    </style>
+
+    <!-- Style for digit button, extending round_button style -->
+    <style name="digitButton" parent="round_button">
+        <!-- Text color for digit buttons -->
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <!-- Style for operator button, extending round_button style -->
+    <style name="operatorButton" parent="round_button">
+        <!-- Text color for operator buttons -->
+        <item name="android:textColor">@color/blue</item>
+        <!-- Text size for operator buttons -->
+        <item name="android:textSize">@dimen/font_size_20</item>
+        <!-- Bold text style -->
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Base style for round buttons -->
+    <style name="round_button" parent="Widget.MaterialComponents.ExtendedFloatingActionButton">
+        <!-- Button dimensions -->
+        <item name="android:layout_width">@dimen/dim_53</item>
+        <item name="android:layout_height">@dimen/dim_53</item>
+        <!-- Text alignment -->
+        <item name="android:textAlignment">center</item>
+        <!-- Button padding -->
+        <item name="android:paddingEnd">@dimen/dim_3</item>
+        <item name="android:paddingTop">@dimen/dim_3</item>
+        <item name="android:paddingBottom">@dimen/dim_3</item>
+        <item name="android:paddingStart">@dimen/dim_3</item>
+        <!-- Bold text style -->
+        <item name="android:textStyle">bold</item>
+        <!-- Text size -->
+        <item name="android:textSize">@dimen/font_size_18</item>
+        <!-- Button margins -->
+        <item name="android:layout_marginBottom">@dimen/dim_7</item>
+        <item name="android:layout_marginTop">@dimen/dim_8</item>
+        <item name="android:layout_marginRight">@dimen/dim_8</item>
+        <item name="android:layout_marginLeft">@dimen/dim_8</item>
+        <!-- Shadow properties -->
+        <item name="android:shadowColor">@color/black</item>
+        <item name="elevation">10dp</item>
+        <item name="addElevationShadow">true</item>
+        <item name="android:shadowDx">5.0</item>
+        <item name="android:shadowDy">4.0</item>
+        <!-- Button corner radius -->
+        <item name="cornerRadius">@dimen/dim_36</item>
+        <!-- Background color -->
+        <item name="backgroundTint">@color/white</item>
+    </style>
+
+    <!-- Divider style -->
+    <style name="divider" parent="Base.Theme.GstCalculatorUsingKotlin">
+        <!-- Background color for divider -->
+        <item name="android:backgroundTint">@color/black</item>
+    </style>
+
+    <!-- Border style -->
+    <style name="border" parent="Base.Theme.GstCalculatorUsingKotlin">
+        <!-- Custom drawable for border -->
+        <item name="android:background">@drawable/result_border_black</item>
+    </style>
+
+    <!-- Back button style -->
+    <style name="backButton" parent="Base.Theme.GstCalculatorUsingKotlin">
+        <!-- Tint color for back button -->
+        <item name="android:tint">@color/black</item>
+    </style>
+
+</resources>

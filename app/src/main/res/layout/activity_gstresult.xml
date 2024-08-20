@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Root LinearLayout that contains all UI elements -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".GSTResult">
+
+    <!-- Back button to navigate to the previous screen -->
+    <ImageView
+        style="@style/backButton"
+        android:id="@+id/BtnBackButton"
+        android:contentDescription="BackButton"
+        android:layout_width="@dimen/dim_20"
+        android:layout_height="@dimen/dim_22"
+        android:layout_gravity="start"
+        android:layout_marginStart="@dimen/dim_8"
+        android:layout_marginTop="@dimen/dim_15"
+        android:layout_marginBottom="@dimen/dim_5"
+        android:src="@drawable/baseline_arrow_back_24" />
+
+    <!-- Container for the heading text -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/TxtHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inder"
+            android:paddingLeft="@dimen/dim_7"
+            android:paddingTop="@dimen/dim_4"
+            android:paddingRight="@dimen/dim_7"
+            android:paddingBottom="@dimen/dim_4"
+            android:text=""
+            android:textSize="@dimen/font_size_20"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Container for displaying GST results -->
+    <LinearLayout
+        style="@style/border"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dim_15"
+        android:layout_marginTop="@dimen/dim_20"
+        android:orientation="vertical">
+
+        <!-- Net Price row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dim_8"
+            android:layout_marginVertical="@dimen/dim_10"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Net Price:"
+                android:textSize="@dimen/font_size_16" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/TxtNetPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="@dimen/font_size_16" />
+        </LinearLayout>
+
+        <!-- CGST row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dim_8"
+            android:layout_marginVertical="@dimen/dim_10"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CGST:"
+                android:textSize="@dimen/font_size_16" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/TxtCGST"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="@dimen/font_size_16" />
+        </LinearLayout>
+
+        <!-- SGST row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dim_8"
+            android:layout_marginVertical="@dimen/dim_10"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SGST:"
+                android:textSize="@dimen/font_size_16" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/TxtSGST"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="@dimen/font_size_16" />
+        </LinearLayout>
+
+        <!-- Divider between sections -->
+        <View
+            style="@style/divider"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_2"
+            android:layout_marginHorizontal="@dimen/dim_6"
+            android:layout_marginVertical="@dimen/dim_5"
+            android:background="@drawable/divider" />
+
+        <!-- Total GST row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dim_8"
+            android:layout_marginVertical="@dimen/dim_10"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total GST:"
+                android:textSize="@dimen/font_size_16" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/TxtGST"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="@dimen/font_size_16" />
+        </LinearLayout>
+
+        <!-- Total Price row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dim_8"
+            android:layout_marginVertical="@dimen/dim_10"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Price:"
+                android:textSize="@dimen/font_size_16" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="6dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/TxtTotalPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="@dimen/font_size_16" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

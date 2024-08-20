@@ -1,0 +1,36 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.GstCalculatorUsingKotlin" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <!-- Primary dark color -->
+        <item name="colorPrimaryDark">@color/black</item>
+        <!-- Background color -->
+        <item name="background">@color/lightWhite</item>
+        <!-- Light status bar (for light icons) -->
+        <item name="android:windowLightStatusBar">true</item>
+        <!-- Text alignment for views -->
+        <item name="android:textAlignment">viewEnd</item>
+        <!-- Default text size -->
+        <item name="android:textSize">@dimen/font_size_28</item>
+        <!-- Default text color -->
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!-- Divider style -->
+    <style name="divider" parent="Base.Theme.GstCalculatorUsingKotlin">
+        <!-- Background color for divider -->
+        <item name="android:backgroundTint">@color/white</item>
+    </style>
+
+    <!-- Border style -->
+    <style name="border" parent="Base.Theme.GstCalculatorUsingKotlin">
+        <!-- Custom drawable for border -->
+        <item name="android:background">@drawable/result_border_white</item>
+    </style>
+
+    <!-- Back button style -->
+    <style name="backButton" parent="Base.Theme.GstCalculatorUsingKotlin">
+        <!-- Tint color for back button -->
+        <item name="android:tint">@color/white</item>
+    </style>
+</resources>
