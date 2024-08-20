@@ -137,9 +137,9 @@ class MainActivity : AppCompatActivity() {
             val cgst = gst / 2
             val totalPrice = if (isAddition) netPrice + gst else netPrice - gst
 
-            intent.putExtra("netPrice", String.format("%.2f", totalPrice))
+            intent.putExtra("netPrice", String.format("%.2f", if (isAddition) netPrice else totalPrice))
             intent.putExtra("gst", String.format("%.2f", gst))
-            intent.putExtra("totalPrice", String.format("%.2f", netPrice))
+            intent.putExtra("totalPrice", String.format("%.2f", if (isAddition) totalPrice else netPrice))
             intent.putExtra("cgst", String.format("%.2f", cgst))
         } catch (e: Exception) {
             intent.putExtra("totalPrice", "Error")
