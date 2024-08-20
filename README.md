@@ -37,7 +37,7 @@ To run the GST Calculator app on your device or emulator, follow these steps:
 1. **Clone the repository:**
 
     ```bash
-    git clone https://github.com/yourusername/gst-calculator.git
+    git clone https://github.com/bhatiachirag2002/gst_calculator_using_kotlin.git
     ```
 
 2. **Open the project in Android Studio:**
